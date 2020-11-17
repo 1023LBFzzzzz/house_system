@@ -21,7 +21,7 @@
                 </el-table-column>
                 <el-table-column prop="photo"  label="房屋图片" scope.row type="hidden" width="300">
                     <template  slot-scope="scope">
-                        <img :src="dealPhoto(scope.row.photo)"  width="300">
+                        <img :src="'/static/image/images/'+ dealPhoto(scope.row.photo)"  width="300">
                     </template>
                 </el-table-column>
                 <el-table-column prop="premises_name" label="名称" sortable width="200">
